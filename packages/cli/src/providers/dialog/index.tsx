@@ -120,12 +120,12 @@ function Dialog({ currentDialog, close }: DialogProps) {
           alignItems="center"
           justifyContent="space-between"
         >
-          <text fg="#E4E4E7" attributes={TextAttributes.BOLD}>
+          <text fg={colors.foreground} attributes={TextAttributes.BOLD}>
             {title}
           </text>
 
           <text
-            fg="#9CA3AF"
+            fg={colors.foreground}
             attributes={TextAttributes.DIM}
             onMouseDown={() => close()}
           >

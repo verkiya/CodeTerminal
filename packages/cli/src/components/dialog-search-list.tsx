@@ -91,7 +91,7 @@ export function DialogSearchList<T>({
         onContentChange={handleContentChange}
       />
       {filtered.length === 0 ? (
-        <text fg="#9CA3AF" attributes={TextAttributes.DIM}>
+        <text fg={colors.foreground} attributes={TextAttributes.DIM}>
           {emptyText}
         </text>
       ) : (

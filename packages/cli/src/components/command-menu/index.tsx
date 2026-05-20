@@ -28,7 +28,9 @@ export function CommandMenu({
   if (filtered.length === 0) {
     return (
       <box paddingX={1}>
-        <text attributes={TextAttributes.DIM}>No matching commands</text>
+        <text fg={colors.foreground} attributes={TextAttributes.DIM}>
+          No matching commands
+        </text>
       </box>
     );
   }

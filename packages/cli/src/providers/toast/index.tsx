@@ -114,7 +114,7 @@ function Toast({ currentToast }: ToastProps) {
         backgroundColor={colors.surface}
         width="100%"
       >
-        <text fg="#E4E4E7" wrapMode="word" width="100%">
+        <text fg={colors.foreground} wrapMode="word" width="100%">
           {currentToast.message}
         </text>
       </box>

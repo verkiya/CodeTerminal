@@ -5,13 +5,13 @@ export function StatusBar() {
   const { colors } = useTheme();
   return (
     <box flexDirection="row" gap={1}>
-      <text fg={colors.primary}>Build</text>
+      <text fg={colors.operationType}>Build</text>
 
       <text fg={colors.dimSeparator} attributes={TextAttributes.DIM}>
         ❯
       </text>
 
-      <text fg="#22D3EE">opus-4.6</text>
+      <text fg={colors.modelName}>opus-4.6</text>
     </box>
   );
 }
